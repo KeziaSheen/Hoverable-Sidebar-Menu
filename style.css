@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: #ffffff;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+
+/* Sidebar */
+.sidebar{
+    position: fixed;
+    top: 0;
+    /* left: 100px; */
+    right: 0;
+    height: 100%;
+    width: 270px;
+    background: #21097b;
+    padding: 15px 10px;
+    box-shadow: 0 0 2px rgb(18, 18, 18);
+    transition: all 0.4s ease;
+}
+.sidebar.close{
+    width: calc(55px + 20px);
+
+
+}
+
+.logo_items{
+    gap: 20px;
+    /* padding: 15px; */
+}
+.nav_image img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.logo_name{
+    /* padding-right: 15px; */
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 500px;
+}
+
+#lock_icon, #sidebar_close{
+    padding: 10px;
+    /* background-color: red; */
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 90px;
+}
+
+#sidebar_close{
+    display: none;
+    color: #ffffff;
+}
+
+.menu_container{
+    margin-top: 40px;
+    overflow-y: auto;
+    /* background: #fff6e2; */
+    height: calc(100% - 82px);
+
+}
+.menu_title{
+    position: relative;
+    height: 50px;
+    width: 55px;
+
+}
+
+.menu_title .title{
+margin-left: 60px;
+/* margin-top: 100px; */
+font-size: 22px;
+}
+
+.menu_title .line{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 20px;
+    border-radius: 25px;
+    background: #ffffff;  
+}
+
+.menu_title .line{
+    opacity: 0;
+}
+
+.item{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+    /* background-color: rgb(106, 106, 206); */
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+.link:hover{
+    color: #21097b;
+    background-color: #ffffff;
+}
+.link span{
+    white-space: nowrap;
+
+}
+    
+.link i{
+    height: 50px;
+    min-width: 55px;
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    /* background-color: rgb(149, 149, 255); */
+}
+
+.navbar #sidebar_open{
+    font-size: 30px;
+}
+
+
+
+
